@@ -43,6 +43,33 @@ public class Student_Test {
 
 
 		assertTrue(1==1);
+		{
+
+			Date dBirthDate = null;
+			try {
+			dBirthDate = new SimpleDateFormat("yyyy-MM-dd").parse("1972-07-31");
+			} catch (ParseException e) {
+			e.printStackTrace();
+			}
+			Student stu1 = new Student("Bert", "Randall", "Gibbons", dBirthDate, "214 Labrador Lane", "302-893-6889", "bgibbons@udel.edu","MIS");
+			Student stu2 = new Student("James", "Randall", "Gibbons", dBirthDate, "219 Labrador Lane", "302-894-6889", "jgibbons@udel.edu","MIS");
+
+			Student stu3 = new Student("Willy", "Randall", "Gibbons", dBirthDate, "217 Labrador Lane", "302-895-6889", "wgibbons@udel.edu","MIS");
+
+			Student stu4 = new Student("Flanagan", "Randall", "Gibbons", dBirthDate, "216 Labrador Lane", "302-896-6889", "fgibbons@udel.edu","MIS");
+
+			Student stu5 = new Student("Kim", "Randall", "Gibbons", dBirthDate, "215 Labrador Lane", "302-897-6889", "kgibbons@udel.edu","MIS");
+
+			HashMap hm = new HashMap();
+			hm.put("Bert");
+			hm.put("James");
+			hm.put("Willy");
+			hm.put("Flanagan");
+			hm.put("Kim");
+			}
+
+			assertTrue(5==5);
+			}
 	}
 
-}
+
