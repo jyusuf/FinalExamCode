@@ -14,5 +14,19 @@ public class Rectangle extends Shape {
 	public double ComputeArea() {
 		return this.getX() * this.getY();
 	}
-
+	
+	public void draw(double ComputeArea) throws
+	IllegalRectangle
+								{
+		if(x <= x)
+		{
+			x -= getX;
+			y -= getY;
+}
+		else
+		{
+			double ComputeArea = x - y;
+			throw new IllegalRectangle(draw);
+}
+}
 }
